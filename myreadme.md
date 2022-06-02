@@ -150,6 +150,70 @@ myFunction(param1, param2) {
 
 ```
 
+# OOP
+
+## Classes
+``` dart
+class MyClass {
+  // do something
+}
+```
+
+## Fields
+``` dart
+class MyClass {
+  var myField;
+}
+```
+
+## getters and setters
+``` dart
+class MyClass {
+  var myField;
+
+  get myGetter {
+    // do something
+  }
+
+  set mySetter(value) {
+    // do something
+  }
+}
+```
+
+## Constructors
+``` dart
+class MyClass {
+  var myField;
+
+  MyClass(param1, param2) {
+    // do something
+  }
+
+  MyClass.myConstructor(param1, param2) {
+    // do something
+  }
+}
+```
+
+## Methods
+``` dart
+class MyClass {
+  var myField;
+
+  myMethod(param1, param2) {
+    // do something
+  }
+}
+```
+
+## instanciation and using getter/setters/methods
+``` dart
+var myInstance = new MyClass();
+var myField = myInstance.myGetter;
+myInstance.mySetter = "Hello World";
+myInstance.myMethod(param1, param2);
+```
 
 
 
