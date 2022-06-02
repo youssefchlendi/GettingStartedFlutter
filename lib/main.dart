@@ -1,52 +1,35 @@
-void main() {
-  Enseignant enseignant = new Enseignant("Dupont", "Jean", 123);
-  Etudiant etudiant = new Etudiant("chlendi", "youssef", 12323);
+import 'package:flutter/material.dart';
 
-  enseignant.getInformations();
-  etudiant.getInformations();
-}
+void main() => runApp(MyApp());
 
-class Personne {
-  String firstName;
-  String lastName;
-
-  Personne(this.firstName, this.lastName);
-
-  String get getFirstName => firstName;
-  set setFirstName(String firstName) => this.firstName = firstName;
-
-  String get getLastName => lastName;
-  set setLastName(String lastName) => this.lastName = lastName;
-
-  String get getFullName => '$firstName $lastName';
-
-  void getInformations() {
-    print('$firstName $lastName');
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Hello World Demo Application',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(title: 'Home page'),
+    );
   }
 }
 
-class Enseignant extends Personne {
-  int cin;
-  Enseignant(firstName, lastName, this.cin) : super(firstName, lastName);
+class MyHomePage extends StatelessWidget {
+  MyHomePage({Key? key, required this.title}) : super(key: key);
+  final String title;
 
-  int get getCin => cin;
-  set setCin(int cin) => this.cin = cin;
-
-  void getInformations() {
-    super.getInformations();
-    print('$cin');
-  }
-}
-
-class Etudiant extends Personne {
-  int numIns;
-  Etudiant(firstName, lastName, this.numIns) : super(firstName, lastName);
-
-  int get getnumIns => numIns;
-  set setnumIns(int numIns) => this.numIns = numIns;
-
-  void getInformations() {
-    super.getInformations();
-    print('$numIns');
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+      ),
+      body: Center(
+          child: Text(
+        'Hello World',
+      )),
+    );
   }
 }

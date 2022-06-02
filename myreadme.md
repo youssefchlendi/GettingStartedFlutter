@@ -1,5 +1,6 @@
-# Variables and dataTypes
-## Variables
+# Dart
+## Variables and dataTypes
+### Variables
 Declare a variable and assign a value
 ``` dart
 var myVariable = "Hello World";
@@ -11,8 +12,8 @@ final myConstant = "Hello World";
 const myConstant1 = "Hello World";
 ```
 
-## Data Types
-### Numbers
+### Data Types
+#### Numbers
 ``` dart
 var myInt = 1;
 int myInt = 1;
@@ -20,7 +21,7 @@ var myDouble = 1.1;
 double myDouble = 1.1;
 ```
 
-### Strings
+#### Strings
 ``` dart
 var myString = "Hello World";
 String myString = "Hello World";
@@ -30,19 +31,19 @@ String myString2 = """
 
 ```
 
-### Booleans
+#### Booleans
 ``` dart
 var myBool = true;
 bool myBool = true;
 ```
 
-### Lists
+#### Lists
 ``` dart
 var myList = [1, 2, 3];
 List myList = [1, 2, 3];
 ```
 
-### Maps
+#### Maps
 ``` dart
 var myMap = {
   "key1": "value1",
@@ -54,24 +55,24 @@ Map myMap = {
 };
 ```
 
-### Dynamic
+#### Dynamic
 ``` dart
 var myDynamic = "Hello World";
 dynamic myDynamic = "Hello World";
 ```
 
-# Decision making and loops
+## Decision making and loops
 
-## decision making
+### decision making
 
-### if
+#### if
 ``` dart
 if (condition) {
   // do something
 }
 ```
 
-### if else
+#### if else
 ``` dart
 if (condition) {
   // do something
@@ -80,7 +81,7 @@ if (condition) {
 }
 ```
 
-### if else if
+#### if else if
 ``` dart
 if (condition) {
   // do something
@@ -89,7 +90,7 @@ if (condition) {
 }
 ```
 
-### switch
+#### switch
 ``` dart
 switch (condition) {
   case "value1":
@@ -104,21 +105,21 @@ switch (condition) {
 }
 ```
 
-## loops
-### for
+### loops
+#### for
 ``` dart
 for (var i = 0; i < 10; i++) {
   // do something
 }
 ```
-#### for in
+##### for in
 ``` dart
 for (var item in list) {
   // do something
 }
 ```
 
-#### for in with index
+##### for in with index
 ``` dart
 for (var item in list.entries) {
   // do something
@@ -126,14 +127,14 @@ for (var item in list.entries) {
 ```
 
 
-### while
+#### while
 ``` dart
 while (condition) {
   // do something
 }
 ```
 
-### do while
+#### do while
 ``` dart
 do {
   // do something
@@ -141,7 +142,7 @@ do {
 ```
 
 
-# Functions
+## Functions
 
 ``` dart
 myFunction(param1, param2) {
@@ -150,9 +151,9 @@ myFunction(param1, param2) {
 
 ```
 
-# OOP
+## OOP
 
-## Classes
+### Classes
 ``` dart
 class MyClass {
   // do something
@@ -166,7 +167,7 @@ class MyClass {
 }
 ```
 
-## getters and setters
+### getters and setters
 ``` dart
 class MyClass {
   var myField;
@@ -181,7 +182,7 @@ class MyClass {
 }
 ```
 
-## Constructors
+### Constructors
 ``` dart
 class MyClass {
   var myField;
@@ -196,7 +197,7 @@ class MyClass {
 }
 ```
 
-## Methods
+### Methods
 ``` dart
 class MyClass {
   var myField;
@@ -207,7 +208,7 @@ class MyClass {
 }
 ```
 
-## instanciation and using getter/setters/methods
+### instanciation and using getter/setters/methods
 ``` dart
 var myInstance = new MyClass();
 var myField = myInstance.myGetter;
@@ -226,7 +227,7 @@ class MyClass extends MySuperClass {
 }
 ```
 
-
+# Flutter
 
 
 
