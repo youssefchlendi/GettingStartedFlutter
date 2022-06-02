@@ -141,6 +141,14 @@ do {
 ```
 
 
+# Functions
+
+``` dart
+myFunction(param1, param2) {
+  // do something
+}
+
+```
 
 
 
