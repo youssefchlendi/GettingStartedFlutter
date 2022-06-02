@@ -1,24 +1,52 @@
 void main() {
-  Employe employe = new Employe("Ahmed");
-  print(employe.getName);
-  employe.setName = "Mohamed";
-  print(employe.getName);
+  Enseignant enseignant = new Enseignant("Dupont", "Jean", 123);
+  Etudiant etudiant = new Etudiant("chlendi", "youssef", 12323);
+
+  enseignant.getInformations();
+  etudiant.getInformations();
 }
 
-class Employe {
-  String name;
+class Personne {
+  String firstName;
+  String lastName;
 
-  Employe(this.name);
+  Personne(this.firstName, this.lastName);
 
-  String get getName {
-    return name;
+  String get getFirstName => firstName;
+  set setFirstName(String firstName) => this.firstName = firstName;
+
+  String get getLastName => lastName;
+  set setLastName(String lastName) => this.lastName = lastName;
+
+  String get getFullName => '$firstName $lastName';
+
+  void getInformations() {
+    print('$firstName $lastName');
   }
+}
 
-  set setName(String name) {
-    this.name = name;
+class Enseignant extends Personne {
+  int cin;
+  Enseignant(firstName, lastName, this.cin) : super(firstName, lastName);
+
+  int get getCin => cin;
+  set setCin(int cin) => this.cin = cin;
+
+  void getInformations() {
+    super.getInformations();
+    print('$cin');
   }
+}
 
-  void result() {
-    print(name);
+class Etudiant extends Personne {
+  int numIns;
+  Etudiant(firstName, lastName, this.numIns) : super(firstName, lastName);
+
+  int get getnumIns => numIns;
+  set setnumIns(int numIns) => this.numIns = numIns;
+
+  void getInformations() {
+    super.getInformations();
+    print('$numIns');
   }
 }

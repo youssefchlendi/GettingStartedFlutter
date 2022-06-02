@@ -215,6 +215,20 @@ myInstance.mySetter = "Hello World";
 myInstance.myMethod(param1, param2);
 ```
 
+## Inheritance
+``` dart
+class MyClass extends MySuperClass {
+  var myField;
+
+  myMethod(param1, param2) {
+    // do something
+  }
+}
+```
+
+
+
+
 
 
 
