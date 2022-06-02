@@ -42,7 +42,7 @@ var myList = [1, 2, 3];
 List myList = [1, 2, 3];
 ```
 
-### Maps
+### Maps
 ``` dart
 var myMap = {
   "key1": "value1",
@@ -60,7 +60,85 @@ var myDynamic = "Hello World";
 dynamic myDynamic = "Hello World";
 ```
 
+# Decision making and loops
 
+## decision making
+
+### if
+``` dart
+if (condition) {
+  // do something
+}
+```
+
+### if else
+``` dart
+if (condition) {
+  // do something
+} else {
+  // do something else
+}
+```
+
+### if else if
+``` dart
+if (condition) {
+  // do something
+} else if (condition) {
+  // do something else
+}
+```
+
+### switch
+``` dart
+switch (condition) {
+  case "value1":
+    // do something
+    break;
+  case "value2":
+    // do something else
+    break;
+  default:
+    // do something else
+    break;
+}
+```
+
+## loops
+### for
+``` dart
+for (var i = 0; i < 10; i++) {
+  // do something
+}
+```
+#### for in
+``` dart
+for (var item in list) {
+  // do something
+}
+```
+
+#### for in with index
+``` dart
+for (var item in list.entries) {
+  // do something
+}
+```
+
+
+### while
+``` dart
+while (condition) {
+  // do something
+}
+```
+
+### do while
+``` dart
+do {
+  // do something
+} while (condition);
+```
 
 
 
